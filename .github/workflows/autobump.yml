@@ -10,6 +10,10 @@ on:
   schedule:
     # Every day at 18:15 UTC
     - cron: 15 18 * * *
+  workflow_dispatch:
+  repository_dispatch:
+    types:
+      - bible-translations-released
 
 permissions: {}
 
